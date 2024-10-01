@@ -1,1 +1,352 @@
-b
+:root
+{
+
+    /* CSS HEX */
+    --ultra-pink: #ff69ebff;
+    --persian-pink: #ff86c8ff;
+    --salmon-pink: #ffbf81ff;
+    --black: #000000ff;
+    --white: #ffffffff;
+
+
+
+        /*Gradient*/
+        
+    --poppins:'Poppins', sans-serif;
+    /*Fonts*/
+    --mainFont: 'Poppins', sans-serif;
+    --titleWeight:800;
+    --normalWeight:300;
+
+    /*colors*/
+    --mainFontColor:var(--black);
+    --mainBackgroundColor:var(--white);
+    --accent1:var(--ultra-pink);
+    --accent2:var(--persian-pink);
+    --accent3:var(--salmon-pink);
+
+    --backAccent1:#ff69eb23;
+    --backAccent2:rgba(255, 105, 235, 0.118);
+    --backAccent3:rgba(255, 192, 129, 0.127);
+    
+
+    /*Sizes*/
+    --mainFontSize:1vw;
+
+
+}
+
+h2 {
+    text-align: center;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.topnav {
+    background-image: linear-gradient(135deg, #ff69ebff, #ff86c8ff, #ffa3a5ff, #ffbf81ff) ;
+    overflow: hidden;
+    display: flex;
+    align-items:center;
+    font-family: var(--otherFont);    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+ 
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-weight: var(--titleWeight);
+    float: left;
+    display: block;
+    color: var(--mainFontColor);
+    text-align: center;
+    padding: 14px 16px;
+    flex-grow: 1;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+
+  .miniNav a{
+    color: var(--accent1);
+  }
+
+  .miniNav a :active{
+    color:var(--accent3);
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    color:var(--mainBackgroundColor);
+  }
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+    color:var(--mainFontColor);
+    padding:0;
+    margin:0;
+
+    
+}
+
+.stack
+{
+    width: 96%;
+    height:30%;
+    padding: 2%;
+    position: relative;
+}
+
+.columns
+{
+    columns: 2;
+}
+
+p{
+    font-weight: var(--normalWeight);
+    color: var(--mainFontColor);
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+}
+
+h1
+{
+    margin-left: 1%;
+    font-size: 2em;;
+    font-family: var(--mainFont);
+    font-weight: var(--titleWeight);
+}
+
+h4
+{
+    font-family: var(--mainFont);
+    font-weight: var(--normalWeight);
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+  }
+
+.box
+{   
+    flex-grow: 1;
+    margin-right: 1%;
+    
+}
+
+.stack:nth-of-type(2) {
+    background:var(--backAccent1);
+    padding-top: 5%;
+  }
+
+  .stack:nth-of-type(3) {
+    background:var(--backAccent3);
+    padding-bottom:5%;
+    
+  }
+
+
+
+  .custom-shape-divider-top-1718238605 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1718240330 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718240330 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1718240330 .shape-fill {
+    fill: #FFFFFF;
+}.custom-shape-divider-bottom-1718240330 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718240330 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1718240330 .shape-fill {
+    fill: #FFFFFF;
+}.custom-shape-divider-bottom-1718240330 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718240330 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1718240330 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1718238605 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 89px;
+}
+
+.custom-shape-divider-top-1718238605 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1718240396 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718240396 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 31px;
+}
+
+.custom-shape-divider-bottom-1718240396 .shape-fill {
+    fill: #FFFFFF;
+}
+footer
+{
+    margin-top: 2%;
+    display: block;
+    background-color:var(--mainFontColor);
+    color:white;
+    float:left;
+    min-width: 94%;
+    max-width:94%;
+    padding:3%;
+    font-family: var(--otherFont);
+    font-weight: var(--titleWeight);
+}
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+      border-radius: 5%;
+    }
+  }
+footer .miniNav
+{
+    display: flexbox;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+a.active
+{
+    color:var(--accent3);
+}
+
+a:hover
+{
+    color:var(--accent3);
+}
+
+@media (max-width: 920px) {
+    #logo {
+        font-size: 1em;
+    }
+
+    .columns{
+        column-count: 1;
+        text-align: center;
+        padding:2%;
+    }
+
+    .topnav
+     {flex-direction: column-reverse;}
+
+     .container
+     {
+        flex-direction: column-reverse;
+     }
+  }
+  
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+    }
+
+    .content{
+        column-count: 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+  
+      .sort {
+      align-self: flex-start;
+    }
+
+     a.dontShow{display: none;}
+    div.dontShow{display: none;}
+    .content{
+        column-count: 1;
+    }
+  }
