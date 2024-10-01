@@ -1,0 +1,110 @@
+.product-filter {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    border-bottom: 3px dashed #1c0f13ff;
+  
+  }
+  
+  .product-filter h1 {
+    flex-grow: 1;
+  }
+  
+  section
+  {
+      margin: 1% 0px;
+  }
+  
+  .sort {
+    display: flex;
+  
+  }
+  
+  .collection-sort {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    
+  .products {
+      margin: 0 3%;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .product-card {
+      /*flex grow - making it all the same size
+      flex basis - the size it should be*/
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      border-radius: 30px;
+      margin:1%;
+      width: 30%;
+      padding-bottom:1%;
+  }
+  
+  .product-image img {
+      max-width: 100%;
+  }
+  
+  .buyButton
+  {
+    text-align: center;
+    margin:3% 25%;
+    background-color: var(--mainFontColor);
+    padding:2% 1%;
+    border-radius: 10px;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  
+    color: var(--mainBackgroundColor);
+    text-decoration: none;
+    position: relative;
+    /*This roughly centers it
+    WHY THE FUCK IS CENTERING SOMETHING SO 
+    FUCKING DIFFICULT*/
+  }
+  
+  .buyButton a
+  {
+    margin: 0;
+  
+    display: block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color: white;
+    font-family: var(--otherFont);
+    font-weight: var(--titleWeight);
+  }
+  
+  @media (max-width: 920px) {
+    .product-card {
+      flex: 1 21%;
+      border-radius: 30px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .product-card {
+      flex: 1 46%;
+      border-radius: 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-filter {
+      flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+        .product-card {
+          flex: 1 46%;
+          border-radius: 5%;
+        }
+      }
+  
+      .sort {
+      align-self: flex-start;
+    }
+  }
