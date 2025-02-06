@@ -29,10 +29,10 @@
 
         function toggleMenu() {
             var menu = document.getElementById("dropdownMenu");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
+            if (menu.style.maxWidth) {
+                menu.style.maxWidth = null;
             } else {
-                menu.style.display = "block";
+                menu.style.maxWidth = "200px";
             }
         }
     </script>
