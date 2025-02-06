@@ -44,7 +44,7 @@ h2 {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: auto;
   }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -61,7 +61,7 @@ h2 {
     position: sticky;
     top: 0;
     z-index: 100;
-    width: 100%;
+    width: auto;
     justify-content: space-between;
   }
 
@@ -112,10 +112,38 @@ body
 
 .stack
 {
+    display: flex;
+    flex-direction: row;
     width: 96%;
     height:30%;
     padding: 2%;
     position: relative;
+}
+
+.inverse
+{
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 600px) {
+    .stack {
+    flex-direction: column;
+    }
+    
+    .inverse
+    {
+    flex-direction: column-reverse;
+    }
+    
+}
+
+
+
+.stack div{
+    flex-grow: 1;
+    margin: 1%;
+    flex-basis: 50%;
+    flex-grow: 50%;
 }
 
 .columns
@@ -349,4 +377,16 @@ a:hover
     .content{
         column-count: 1;
     }
+  }
+
+  .splitContent
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .splitContent div
+  {
+      flex-grow: 1;
   }

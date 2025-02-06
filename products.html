@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,79 +9,100 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="productCards.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="socialMedia.css">
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
         function showComingSoonMessage() {
             alert("Coming soon");
         }
+
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
     </script>
 </head>
+
 <body>
-    <nav class="topnav" id = "topnav">
-
+    <nav class="topnav" id="topnav">
         <h1>Our Products</h1>
-        <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class = "dontShow" href="future.html">Our Future</a>
-        <a href="products.html">Products</a></div>
-      </nav>
-        <h2 id = "#allProducts">Our Products</h2>  
-            <section class="products">
-                <!-- Product-->
-                  <div class="product-card">
-                      <div class="product-image">
-                  <img src="usbHolder.jpg" alt="USB Holder Keyring">
-                </div>
-                    <h5>USB Holder Keyring</h5>
-                    <h6>£15.00</h6>
-                    <div class = "buyButton" onclick="showComingSoonMessage()">
-                    <a>Coming Soon</a></div>
-                  </div>   
-                <!-- Product-->
-                  <div class="product-card">
-                      <div class="product-image">
-                  <img src="wiredBracelet.jpg" alt="Wired Bracelet">
-                </div>
-                    <h5>Wired Bracelet</h5>
-                    <h6>£15.00</h6>
-                    <div class = "buyButton" onclick="showComingSoonMessage()">
-                    <a>Coming Soon</a></div>
-                  </div>   
-                <!-- Product-->
-                  <div class="product-card dontShow">
-                      <div class="product-image">
-                  <img src="connectedCoaster.jpg" alt="Connected Coaster">
-                </div>
-                    <h5>Connected Coaster</h5>
-                    <h6>£15.00</h6>
-                    <div class = "buyButton" onclick="showComingSoonMessage()">
-                    <a>Coming Soon</a></div>
-                  </div>   
-              </section>
-    </div>    
-
-      <footer>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+        </div>
+    </nav>
+    <h2 id="#allProducts">Our Products</h2>
+    <section class="products">
+        <!-- Product-->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="usbHolder.jpg" alt="USB Holder Keyring">
+            </div>
+            <h5>USB Holder Keyring</h5>
+            <h6>£15.00</h6>
+            <div class="buyButton" onclick="showComingSoonMessage()">
+                <a>Coming Soon</a>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="wiredBracelet.jpg" alt="Wired Bracelet">
+            </div>
+            <h5>Wired Bracelet</h5>
+            <h6>£15.00</h6>
+            <div class="buyButton" onclick="showComingSoonMessage()">
+                <a>Coming Soon</a>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="product-card dontShow">
+            <div class="product-image">
+                <img src="connectedCoaster.jpg" alt="Connected Coaster">
+            </div>
+            <h5>Connected Coaster</h5>
+            <h6>£15.00</h6>
+            <div class="buyButton" onclick="showComingSoonMessage()">
+                <a>Coming Soon</a>
+            </div>
+        </div>
+    </section>
+    <footer>
         Made by: M.O.R.E(The team)
 
-          <div class="miniNav">
-            <a href="index.html" >Home</a>
+        <div class="miniNav">
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="future.html">Our Future</a>
-            <a href="products.html" class="active">Products</a></div>
-          </div>
-          © 2024 , Powered by Github
-
-        </ul>
-        </footer>      
-      
+            <a href="products.html" class="active">Products</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61567936601011" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/wearemore_eco" class="fa fa-instagram"></a>
+            <a href="https://x.com/wearemore_eco" class="fa fa-twitter"></a>
+        </div>
+        © 2024, Powered by Github
+    </footer>
 </body>
-              </html>
+
+</html>

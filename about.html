@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="productCards.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="socialMedia.css">
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
@@ -20,41 +22,68 @@
         function showComingSoonMessage() {
             alert("Coming soon");
         }
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
     </script>
 </head>
 <body>
     <nav class="topnav" id="topnav">
-
         <h1>About Us</h1>
-        <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="dontShow" href="future.html">Our Future</a>
-        <a href="products.html">Products</a></div>
-    </nav>     
-    <div class="stack">
-        <h2 id="aboutUs">About Us</h2>             
-        <div class="box"><p class="columns">MORE is a company founded and ran by <strong> A-Level students</strong>. We study a range of subjects,
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="products.html">Products</a>
+        </div>
+    </nav>  
+    
+    <!-- About Us  -->
+    <div class="stack inverse">
+        <div class="box"><h2 id="aboutUs">About Us</h2> <p>MORE is a company founded and ran by <strong> A-Level students</strong>. We study a range of subjects,
              come from a <strong>range of backgrounds</strong> and various schools but one thing unites us:
              a desire to change the <strong>rampant consumerism and waste produced</strong> in the electronics sector. 
             <br><br>
             Initially we began <strong>repurposing old laptops</strong> into jewellery to bring women into tech, 
             but our products and ideas have developed to much wider ranges. </p></div>     
         <div class="box">
-            <img src="groupShot.jpg" alt="The Team" border="0" width="100%" style="border-radius:30px;">
+            <img src="mayorphoto.jpg" alt="The Team" border="0" width="100%" style="border-radius:30px;">
         </div>
     </div>
-    <div class="stack" id="impact">
 
+    <!-- Goals -->
+    <div class="stack" id="journey">
+        <div class="box">
+        <h3>Long Term</h3>
+        <ul>
+            <li><strong>Helping Women and Under-privileged groups</strong>:Helping others has always been the forefront of what we strive to do here at M.O.R.E and this will never change. As we go in we know people will genuinely be helped by what we do.</li>
+            <li><strong>Reducing waste</strong>: Waste is an enormous problem ,in our homes , in our community and around the world. We hope to scale our project and reduce waste for everyone.</li></ul>
+        <h3>Short Term</h3>
+        <ul>
+            <li><strong>Sourcing materials</strong>We believe in the power of transformation. We look to source high-quality, reclaimed materials to turn waste into beautiful, functional designs.</li>
+        </ul>
+        </div>
+        <div class="box">
+            <img src="future.jpg" alt="The Team" border="0" width="100%" style="border-radius:30px;">
+    </div>
+    </div>
         <h2>Our Impact</h2>  
         <div class="container">
             <div class="box">
-                <h3>What we do</h3>
             <ul>
-                <li><strong>Technology:</strong> We collect and refurbish electronic waste, transforming them into products which can be used beyond the “end” 
-                    of their lifecycle. An <strong>enviromental friendly</strong> process which creates learning tools for electrical components. <br>
-                    <li><strong>Community Building:</strong>We are a team led by women and aim to develop supportive, inclusive and unique environments for <strong> underrepresented groups</strong> to connect,
-                         collaborate and grow. Fostering opportunities for women to grow their confidence in a <strong> male-dominated industry.</strong></ul>
+            <li><strong>Technology:</strong> We collect and refurbish electronic waste, transforming them into products which can be used beyond the “end” 
+            of their lifecycle. An <strong>enviromental friendly</strong> process which creates learning tools for electrical components. <br>
+            <li><strong>Community Building:</strong>We are a team led by women and aim to develop supportive, inclusive and unique environments for <strong> underrepresented groups</strong> to connect,
+            collaborate and grow. Fostering opportunities for women to grow their confidence in a <strong> male-dominated industry.</strong></ul>
             </div>
         </div>
     </div>
@@ -62,11 +91,17 @@
     <footer>
         Made by: M.O.R.E(The team)
 
-          <div class="miniNav">
+        <div class="miniNav">
             <a href="index.html">Home</a>
             <a href="about.html" class="active">About</a>
-            <a href="future.html">Our Future</a>
-            <a href="products.html">Products</a></div>
-        </footer>
+            <a href="products.html">Products</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61567936601011" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/wearemore_eco" class="fa fa-instagram"></a>
+            <a href="https://x.com/wearemore_eco" class="fa fa-twitter"></a>
+        </div>
+        © 2024, Powered by Github
+    </footer>
 </body>
 </html>
