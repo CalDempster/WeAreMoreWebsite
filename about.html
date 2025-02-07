@@ -24,10 +24,10 @@
         }
         function toggleMenu() {
             var menu = document.getElementById("dropdownMenu");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
+            if (menu.style.maxWidth) {
+                menu.style.maxWidth = null;
             } else {
-                menu.style.display = "block";
+                menu.style.maxWidth = "200px";
             }
         }
     </script>
@@ -42,7 +42,6 @@
         </div>
         <div class="dropdown-menu" id="dropdownMenu">
             <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
             <a href="products.html">Products</a>
         </div>
     </nav>  

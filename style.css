@@ -9,8 +9,14 @@
     --white: #ffffffff;
 
 
-
+    /* CSS HEX */
+    --dark-spring-green: #2c6e49ff;
+    --sea-green: #4c956cff;
+    --light-yellow: #fefee3ff;
+    --white: #ffffffff;
+    --black: #000000ff;
         /*Gradient*/
+        --gradient-left: linear-gradient(270deg, #2c6e49ff, #4c956cff, #fefee3ff);
         
     --poppins:'Poppins', sans-serif;
     /*Fonts*/
@@ -21,11 +27,11 @@
     /*colors*/
     --mainFontColor:var(--black);
     --mainBackgroundColor:var(--white);
-    --accent1:var(--ultra-pink);
+    --accent1:var(--sea-green);
     --accent2:var(--persian-pink);
-    --accent3:var(--salmon-pink);
+    --accent3:var(--light-yellow);
 
-    --backAccent1:#ff69eb23;
+    --backAccent1:var(--light-yellow);
     --backAccent2:rgba(255, 105, 235, 0.118);
     --backAccent3:rgba(255, 192, 129, 0.127);
     
@@ -53,7 +59,7 @@ h2 {
   }
 
 .topnav {
-    background-image: linear-gradient(135deg, #ff69ebff, #ff86c8ff, #ffa3a5ff, #ffbf81ff) ;
+    background-image: var(--gradient-left);
     overflow: hidden;
     display: flex;
     align-items:center;
@@ -344,8 +350,6 @@ a:hover
         padding:2%;
     }
 
-    .topnav
-     {flex-direction: column-reverse;}
 
      .container
      {
