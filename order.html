@@ -25,6 +25,14 @@
         function showComingSoonMessage() {
             alert("Coming soon");
         }
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.maxWidth) {
+                menu.style.maxWidth = null;
+            } else {
+                menu.style.maxWidth = "200px";
+            }
+        }
     </script>
 </head>
 <body>
@@ -58,9 +66,10 @@
             Made by: M.O.R.E(The team)
     
               <div class="miniNav">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="products.html">Products</a></div>
+                <a href="products.html">Products</a>
+                <a href="order.html" class="active">Make an order</a></div>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/profile.php?id=61567936601011" class="fa fa-facebook"></a>
                     <a href="https://www.instagram.com/wearemore_eco" class="fa fa-instagram"></a>
