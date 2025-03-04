@@ -24,7 +24,11 @@
 
     <script>
         function showComingSoonMessage() {
-            alert("Comqming Soon! Thank you for your interest in our products. We will get back to you as soon as possible.");
+            alert("Coming Soon! Thank you for your interest in our products. We will get back to you as soon as possible.");
+            document.getElementById("FirstName").value = " ";
+            document.getElementById("Surname").value = " ";  
+            document.getElementById("Email").value = " ";
+            
         }
         function toggleMenu() {
             var menu = document.getElementById("dropdownMenu");
