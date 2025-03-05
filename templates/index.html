@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to MORE, a pioneering initiative dedicated to empowering women of all ages through the innovative use of upcycled technology.At MORE, we believe in the transformative power of information and communication technology (ICT) ">
+    <meta name="keywords" content="upcycling,upcycled gifts,women in stem,NI women in stem">
+    <meta name="author" content="Cal Dempster + The MORE team">
+
+    <title>M.O.R.E</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/productCards.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/hamburger.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/socialMedia.css')}}">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function showComingSoonMessage() {
+            alert("Coming soon");
+        }
+    </script>
+</head>
+<body>
+    <nav class="topnav" id="topnav">
+        <h1>M.O.R.E</h1>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="{{ url_for('templates',filename='about.html')}}">About</a>
+            <a href="{{ url_for('templates',filename='products.html')}}">Products</a>
+        </div>
+    </nav>
+
+
+    <div class = "stack inverse">
+        <div class="box">
+            <h2 id = "aboutUs">Welcome to MORE</h2><p style="text-align:center">
+            A pioneering initiative focused on making <strong>original recycled equipment.</strong><br><br>
+
+            At <strong>MORE</strong>, we strive to create a <strong>greener and more accessible</strong> workplace for the chronically underrepresented women in the tech landscape.<br>
+             Our mission is to develop an alternate pathway for electronics,
+            instead of tech to landfill, by <strong>creating upcycled products.</strong>
+            At More, we believe in <strong>empowering women as a crucial part of our mission</strong>. By partnering with female artisans 
+            and entrepreneurs, we not only provide opportunities for skill development and economic independence 
+            but also amplify their voices in the <strong>sustainability movement</strong>. Our commitment extends beyond upcycling;
+            we aim to create a supportive community that champions women's <strong>creativity and innovation. </strong>
+            Together, we can transform waste into beautiful products while uplifting women 
+            and <strong>fostering a brighter, more equitable future for all</strong>.</p></div>      
+        <div class="box">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9123.60055321853!2d-7.326951218886294!3d54.998832244903525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485fe16e5c10c1a3%3A0x914a2b1e88edf700!2sThe%20AMP%20Growth%20Incubator!5e0!3m2!1sen!2suk!4v1727870778183!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+      <footer>
+        Made by: M.O.R.E(The team)
+
+          <div class="miniNav">
+            <a class="active">Home</a>
+            <a href="{{ url_for('templates',filename='about.html')}}">About</a>
+            <a href="{{ url_for('templates',filename='products.html')}}">Products</a>
+        </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61567936601011" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/wearemore_eco" class="fa fa-instagram"></a>
+                <a href="https://x.com/wearemore_eco" class="fa fa-twitter"></a>
+            </div>
+            © 2024, Powered by Github
+
+        </ul>
+        </footer>           
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.maxWidth) {
+                menu.style.maxWidth = null;
+            } else {
+                menu.style.maxWidth = "200px";
+            }
+        }
+    </script>
+</body>
+</html>
