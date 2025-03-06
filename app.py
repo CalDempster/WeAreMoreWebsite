@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 from flask_sqlalchemy import SQLAlchemy  # Import SQLAlchemy class from flask_sqlalchemy module
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cafe.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///MORE.db'
 db = SQLAlchemy(app)
 
 class Order(db.Model):
