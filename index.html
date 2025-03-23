@@ -27,11 +27,34 @@
 
     <script>
         function showComingSoonMessage() {
-            alert("Coming soon");
+            alert("Coming soon! We are working hard to bring you the best products. Stay tuned! in the mean time please fill in our survey to help us improve our products");
         }
     </script>
 </head>
 <body>
+    <!-- Add this to your HTML -->
+<div id="customAlert" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border: 2px solid #4CAF50; border-radius: 10px; z-index: 1000; text-align: center;">
+    <p>Coming soon! We are working hard to bring you the best products. Stay tuned! In the meantime, please fill in our <a target="_blank"  href="https://docs.google.com/forms/d/e/1FAIpQLSc3OAE-QZmwZrddQYAk_LT3gOenjHxGZE5OD2kiwUy3v_jveA/viewform?usp=send_form" style="color: #4CAF50; text-decoration: underline;">survey</a> to help us improve our products.</p>
+    <button onclick="closeCustomAlert()" style="margin-top: 10px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Close</button>
+</div>
+
+<!-- Add this to your JavaScript -->
+<script>
+    function showComingSoonMessage() {
+        // Show the custom alert box
+        document.getElementById("customAlert").style.display = "block";
+    }
+
+    function closeCustomAlert() {
+        // Hide the custom alert box
+        document.getElementById("customAlert").style.display = "none";
+    }
+
+    window.onload = function() {
+        // Show the custom alert box after 5 seconds
+        setTimeout(showComingSoonMessage, 1000);
+    }
+</script>
     <nav class="topnav" id="topnav">
         <h1>M.O.R.E</h1>
         <div class="hamburger-menu" onclick="toggleMenu()">
